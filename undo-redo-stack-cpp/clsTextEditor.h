@@ -34,10 +34,37 @@ public:
 
  
     void undo() {
-       
+        if (!_undoStack.empty()) {
+            
+            _redoStack.push(_currentText);
+
+        
+            _currentText = _undoStack.top();
+
+            _undoStack.pop();
+
+            cout << "\n[System]: Undo performed successfully.\n";
+        }
+        else {
+            cout << "\n[System]: Nothing to undo!\n";
+        }
     }
 
     void redo() {
-        
+        if (!_redoStack.empty()) {
+         
+            _undoStack.push(_currentText);
+
+         
+            _currentText = _redoStack.top();
+
+            
+            _redoStack.pop();
+
+            cout << "\n[System]: Redo performed successfully.\n";
+        }
+        else {
+            cout << "\n[System]: Nothing to redo!\n";
+        }
     }
 };
