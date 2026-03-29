@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 #include <string>
 #include "clsStack.h" 
 
@@ -22,7 +21,7 @@ public:
        
         _redoStack.clear();
 
-        _currentText += newText; 
+        _currentText = newText; 
     }
 
    
