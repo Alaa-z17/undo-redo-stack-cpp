@@ -3,6 +3,11 @@
 A robust text editor simulation that demonstrates the practical application of the **Stack** data structure to manage state history. This project applies **Object-Oriented Programming (OOP)** principles to provide a seamless Undo and Redo experience.
 
 ---
+## 🎥 Video Tutorial
+
+[![Undo/Redo System (C++) Tutorial](https://img.youtube.com/vi/AV8cq2wijvI/0.jpg)](https://youtu.be/AV8cq2wijvI)
+
+*Click the image above to watch a complete walkthrough of the Student Management System!*
 
 ## 🚀 Features
 
